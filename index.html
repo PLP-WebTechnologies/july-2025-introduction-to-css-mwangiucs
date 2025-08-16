@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Engineering Basics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Software Engineering</h1>
+    <p>Learn the basics of building software applications.</p>
+
+    <h2>Programming Languages</h2>
+    <ul>
+        <li>Python - Easy to learn</li>
+        <li>JavaScript - For websites</li>
+        <li>Java - Popular in business</li>
+        <li>C++ - Fast and powerful</li>
+    </ul>
+
+    <h2>Development Steps</h2>
+    <ol>
+        <li>Plan your project</li>
+        <li>Write the code</li>
+        <li>Test your program</li>
+        <li>Fix any bugs</li>
+        <li>Deploy to users</li>
+    </ol>
+
+    <h2>Job Roles</h2>
+    <table border="1">
+        <tr>
+            <th>Job Title</th>
+            <th>Main Tasks</th>
+            <th>Skills Needed</th>
+        </tr>
+        <tr>
+            <td>Frontend Developer</td>
+            <td>Build user interfaces</td>
+            <td>HTML, CSS, JavaScript</td>
+        </tr>
+        <tr>
+            <td>Backend Developer</td>
+            <td>Build server logic</td>
+            <td>Python, Java, Databases</td>
+        </tr>
+        <tr>
+            <td>Full Stack Developer</td>
+            <td>Both frontend and backend</td>
+            <td>Multiple languages</td>
+        </tr>
+    </table>
+
+    <h2>Learning Resources</h2>
+    
+     <h3>Programming Tutorial Video</h3>
+  <video width="640" height="360" controls>
+    <source src="media/b.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+      
+  <p>Watch this video to learn programming basics.</p>
+    
+    
+    
+    <h2>Image</h2>
+  <img src="media/a.jpg" alt="My first image" width="400">
+
+<h2>podcast</h2>
+  <audio controls>
+    <source src="media/c.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+
+    <h2>Student Registration Form</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <p>
+                <label for="firstName">First Name:</label><br>
+                <input type="text" id="firstName" name="firstName" required 
+                       placeholder="Enter your first name" 
+                       autocomplete="given-name" 
+                       minlength="2" maxlength="50">
+            </p>
+            
+            <p>
+                <label for="lastName">Last Name:</label><br>
+                <input type="text" id="lastName" name="lastName" required 
+                       placeholder="Enter your last name" 
+                       autocomplete="family-name" 
+                       minlength="2" maxlength="50">
+            </p>
+            
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required 
+                       placeholder="your.email@example.com" 
+                       autocomplete="email">
+            </p>
+            
+            <p>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" 
+                       placeholder="123-456-7890" 
+                       autocomplete="tel" 
+                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </p>
+            
+            <p>
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" 
+                       placeholder="18" 
+                       min="13" max="100" 
+                       autocomplete="age">
+            </p>
+            
+            <p>
+                <label for="website">Personal Website:</label><br>
+                <input type="url" id="website" name="website" 
+                       placeholder="https://yourwebsite.com" 
+                       autocomplete="url">
+            </p>
+            
+            <p>
+                <label for="studentId">Student ID (Auto-generated):</label><br>
+                <input type="text" id="studentId" name="studentId" 
+                       value="STU-2024-001" 
+                       readonly>
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Course Preferences</legend>
+            
+            <p>
+                <label>Experience Level:</label><br>
+                <input type="radio" id="beginner" name="level" value="beginner" required>
+                <label for="beginner">Beginner</label><br>
+                <input type="radio" id="intermediate" name="level" value="intermediate" required>
+                <label for="intermediate">Intermediate</label><br>
+                <input type="radio" id="advanced" name="level" value="advanced" required>
+                <label for="advanced">Advanced</label>
+            </p>
+            
+            <p>
+                <label>Interested Topics:</label><br>
+                <input type="checkbox" id="web" name="topics" value="web">
+                <label for="web">Web Development</label><br>
+                <input type="checkbox" id="mobile" name="topics" value="mobile">
+                <label for="mobile">Mobile Apps</label><br>
+                <input type="checkbox" id="games" name="topics" value="games">
+                <label for="games">Game Development</label><br>
+                <input type="checkbox" id="ai" name="topics" value="ai">
+                <label for="ai">Artificial Intelligence</label>
+            </p>
+            
+            <p>
+                <label for="startDate">Preferred Start Date:</label><br>
+                <input type="date" id="startDate" name="startDate" 
+                       min="2024-01-01" max="2025-12-31">
+            </p>
+            
+            <p>
+                <label for="schedule">Preferred Schedule:</label><br>
+                <select id="schedule" name="schedule" required>
+                    <option value="">Choose a schedule</option>
+                    <option value="morning">Morning Classes</option>
+                    <option value="afternoon">Afternoon Classes</option>
+                    <option value="evening">Evening Classes</option>
+                    <option value="weekend">Weekend Classes</option>
+                </select>
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Additional Information</legend>
+            
+            <p>
+                <label for="password">Create Password:</label><br>
+                <input type="password" id="password" name="password" required 
+                       placeholder="Enter a secure password" 
+                       minlength="8" 
+                       autocomplete="new-password">
+            </p>
+            
+            <p>
+                <label for="resume">Upload Resume:</label><br>
+                <input type="file" id="resume" name="resume" 
+                       accept=".pdf,.doc,.docx">
+            </p>
+            
+            <p>
+                <label for="message">Why do you want to learn programming?</label><br>
+                <textarea id="message" name="message" required 
+                          placeholder="Tell us about your goals and interests..." 
+                          rows="4" cols="50" 
+                          minlength="20" maxlength="500"></textarea>
+            </p>
+            
+            <p>
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                <label for="newsletter">Subscribe to our newsletter</label>
+            </p>
+            
+            <p>
+                <input type="checkbox" id="terms" name="terms" value="accepted" required>
+                <label for="terms">I agree to the terms and conditions</label>
+            </p>
+        </fieldset>
+        
+        <p>
+            <input type="submit" value="Register for Course">
+            <input type="reset" value="Clear Form">
+        </p>
+    </form>
+  </div>
+</body>
+</html>
